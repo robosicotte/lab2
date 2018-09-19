@@ -21,5 +21,51 @@ A very common problem in physics is measuring the wavelength of light from an un
 \end{equation}
 where $d$ is the spacing between lines in the grating, $\lambda$ is the wavelength of the light, $n$ is the order of the diffraction maximum, $\theta_i$ is the angle of incidence, and $\theta_n$ is the angle of the $n^{th}$ order maximum.\\
 
-\noindent 
+\noindent In this experiment, we are using a steel ruler with regularly spaced dark lines as our diffraction grating.  By solving the appropriate optics equations and using many trigonometric approximations, we get
+\begin{equation}
+	\lambda=\frac{d}{2nL^2}[(h_n)^2-h_n h_0]
+\end{equation}
+where $L$ is the distance from the steel ruler to the screen, $h_0$ is the position of the first maximum, and $h_n$ is the position of the $n^th$ maximum.
+A diagram of the setup is in the section "Experimental Method."
+
+\noindent Additionally, to determine the approximate error in the first part of the lab, we need to use Eq. (4), which is the formula for the approximate wavelength as well as Eq. (5), which is the formula for the approximate error of a calculated quantity.
+\begin{equation}
+	\lambda \approx \frac{d}{L^2} h_0^2
+\end{equation}
+\begin{equation}
+	\delta \lambda \approx |\frac{\partial \lambda}{\partial L}\delta L|+ |\frac{\partial\lambda}{\partial h_0}\delta h_0|
+\end{equation}
+By performing the partial differentiation of Eq. (4), we get
+\begin{equation}
+	\delta\lambda=\frac{2d}{L^3}h_0^2  \delta L+\frac{2d}{L^2}h_0  \delta h_0
+\end{equation}
+By substituting $\lambda$ from Eq. (3) and simplifying, we obtain:
+\begin{equation}
+  \frac{\delta \lambda}{\lambda} \approx \frac{2}{L} \delta L + \frac{1}{h_0} \delta h_0
+  \end{equation}
+  
+We also will need to use the formulas for the standard deviation (Eq. (7)) and standard error (Eq. (8)).
+\begin{equation}
+	\sigma=\sqrt{\frac{\sum{i=0}{N}{(x_i-\bar{x})}}{N-1}}
+\end{equation}
+\begin{equation}
+	Standard Error=\frac{\sigma}{\sqrt{N}}
+\end{equation}
+In this lab, we will be using a steel ruler as a diffraction grating to measure the wavelength of a light source.  The main objective of this lab is to learn more about the propagation of error and how unknown errors can significantly affect our measurements and results.
+\section*{Experimental Method:}
+In this lab, we used the following apparatus.  A helium-neon laser was used to provide a source of light.  A steel ruler with a 1/32" and a 1/64" scale was attached to a stand and was our diffraction grating.  By raising and lowering the stand, we could switch betweeen the two scales.  A piece of white paper attached to a small base was used as our screen.  To measure the distance from the screen to the grating and the positions of the different maxima, we used a meter stick with markings every 1 mm.
+The lab consisted of two main parts.  
+
+\noindent In Part 1, we estimated the distance from the grating to the screen as well as finding an approximate value for the error of this measurement.  We also estimated the error of our measurements for the position of the different maxima and then used the propagation of error formula to determine our approximate error for the wavelength (Eq. (6)) and set this equal to our desired error.
+
+\noindent In Part 2, we made actual measurements of the position of the first 5 maxima for each of the two gratings and also determined the distance between the grating and the screen.  We then used Eq. (2) to calculate the associated wavelength for each maximum.  Then, we used
+\section*{Part 1 Results}
+, which was 
+\begin{equation*}
+	\frac{\delta \lambda}{\lambda}=\frac{1}{\lambda}(\frac{2d}{L^3}h_0^2  \delta L+\frac{2d}{L^2}h_0  \delta h_0)<0.02
+\end{equation*}
+By simplifying this equation and substituting Eq. (4) in to remove the $\lambda$ terms, we obtained
+\begin{equation*}
+	\frac{1}{L} \delta L + \frac{1}{h_0} \delta h_0 < 0.01
+\end{equation*}
 \end{document}
